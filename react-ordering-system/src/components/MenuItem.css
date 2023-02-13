@@ -1,0 +1,71 @@
+.menuItem {
+  width: 100%;
+  padding: 20px;
+  background-color: white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  margin: 2.5px 0;
+  display: flex;
+  justify-content:space-between;
+}
+
+.menuItem .name, .menuItem .category, .menuItem .price {
+  color:rgba(50, 50, 50, 1);
+}
+
+.menuItem .name {
+  font-size: 2rem;
+}
+
+.menuItem .category {
+  font-size: 1rem;
+}
+
+.menuItem .price {
+  font-size: 1.5rem;
+  color: coral;
+}
+
+.menuItem .information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+}
+
+.menuItem .controls {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 35%;
+}
+
+.menuItem .controls * {
+  font-size: 1.5rem;
+}
+
+.menuItem .controls button {
+  width: 30%;
+  height: 3rem;
+  background-color: coral;
+  border: 0;
+  border-radius: 15px;
+  color:white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.menuItem .controls button:hover{
+  background-color: #FF5A1D;
+}
+
+.menuItem .controls button:active{
+  transform: translateY(2px);
+}
+
+
+@media only screen and (max-width: 970px) {
+  html {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,71 @@
+.customerApp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: max-content;
+  background-color: lightgrey;
+}
+
+.center {
+  width:40%;
+  margin: 5rem 0;
+  margin-bottom: 12.5rem; /* center margin (5rem) + checkoutbar height (7.5rem) = 12.5rem */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkoutBar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 7.5rem;
+  background-color: white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 0px 8px 8px;
+  display: flex;
+  /* justify-content: center;  */
+}
+
+.checkoutBar > div {
+  width: calc(100%/3);
+}
+
+.checkoutBar .buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkoutBar .buttonContainer .submitBtn {
+  width: 80%;
+  height: 4rem;
+  font-size: 2rem;
+  background-color: #FF5A1D;
+  border: 0;
+  border-radius: 15px;
+  color:white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.checkoutBar .buttonContainer .submitBtn:hover {
+  background-color: #E93F00;
+}
+
+.checkoutBar .buttonContainer .submitBtn:active{
+  transform: translateY(2px);
+}
+
+@media only screen and (max-width: 970px) {
+  .center {
+    width: 80%;
+  }
+
+  .checkoutBar .buttonContainer {
+    order: 2;
+  }
+}
